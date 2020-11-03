@@ -1,0 +1,279 @@
+@import "compass/css3";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logos {
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  top: 25%;
+  margin-left: -150px;
+}
+
+img {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-left: 18%;
+  color: grey;
+  background-color: #fdf4e3;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #244c54;
+  font-weight: bold;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+  /*background-color: #fdf4e3;*/
+  background-color: #fff;
+}
+
+canvas {
+  cursor: url("../images/pen.ico"), crosshair;
+}
+
+span {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  width: 80%;
+  font-weight: 700;
+  top: 8%;
+  left: 50%;
+  /*color: #3c3431;*/
+  color: #cca47c;
+  margin-top: -40px;
+  margin-left: -40%;
+}
+
+span h1{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+span h4{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+span #info {
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.7;
+  color: #000;
+  font-weight: 400;
+}
+span h4 label {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 35px;
+  background-image: linear-gradient(
+    to left,
+    purple,
+    indigo,
+    blue,
+    green,
+    rgb(148, 126, 0),
+    orange,
+    red
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent;  */
+  /* color: #244c54; */
+}
+
+.info-mobile {
+  visibility: hidden;
+}
+#clr-btn {
+  visibility: hidden;
+}
+#touch-button {
+  visibility: hidden;
+  position: absolute;
+}
+
+ @media screen and (max-width: 955px) {
+  span h1{
+   
+  }
+} 
+
+
+@media screen and (max-width: 830px) {
+  /* span {
+    left: 37%;
+  } */
+  .logos {
+    top: 32%;
+  }
+
+  .info-mobile {
+    visibility: visible;
+  }
+
+
+  #clear-button {
+    visibility: visible;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -35px;
+  }
+
+  #clear-button {
+    font-size: 12px;
+    padding: 5px 15px;
+
+    color: #fff;
+    background-color: #244c54;
+  }
+
+  #info {
+    visibility: hidden;
+  }
+  #touch-button {
+    visibility: visible;
+    top: 50%;
+    left: 10px;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    border: 1px solid white;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  /* span {
+    left: 35%;
+  } */
+}
+@media screen and (max-width: 675px) {
+   span h4 {
+    font-size: 1.5rem;
+  } 
+  img {
+    width: 200px;
+  }
+  .logos {
+    top: 40%;
+    margin-left: -100px;
+  }
+  .btn {
+    margin-left: unset;
+  }
+  #clear-button {
+    visibility: visible;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -28px;
+  }
+}
+@media screen and (max-width: 600px) {
+ span h4{
+  font-size: 1.2rem;
+ }
+
+ span p{
+  font-size: 1rem;
+ }
+}
+
+
+@media screen and (max-width: 515px) {
+  span h4{
+    font-size:1.2rem;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 477px) {
+  .logos {
+    top: 45%;
+  }
+  #clear-button {
+    top: 35%;
+  }
+}
+@media screen and (max-width: 460px) {
+  span {
+    width: 95%;
+    margin-left: -47.5%;
+  }
+}
+@media screen and (max-width: 425px) {
+   span h4 {
+   font-size:20px;
+  } 
+
+  span p{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 407px) {
+  span h4 {
+    /* left: 48%; */
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 378px) {
+  span {
+    left: 50%;
+    font-size: 15px;
+  }
+
+  span h4{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 363px) {
+  span p {
+    /* left: 55%; */
+    font-size: 12px;
+  }
+  span h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 322px) {
+  span p{
+    /* left: 65%; */
+    font-size: 12px;
+  }
+  span h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 296px) {
+  span p{
+    /* left: 75%; */
+    font-size: 10px;
+  }
+  span h4 {
+    font-size: 13px;
+  }
+}
