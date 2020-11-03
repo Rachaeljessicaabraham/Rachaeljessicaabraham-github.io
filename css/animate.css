@@ -24,7 +24,8 @@ img {
   margin-top: 10px;
   margin-left: 18%;
   color: grey;
-  background-color: #fdf4e3;
+  background-color: #fff;
+  /*background-color: #fdf4e3;*/
 }
 
 .btn:hover {
